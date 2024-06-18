@@ -8,9 +8,9 @@ export default {
 
     extend: {},
     fontFamily: {
-      'sans': ['Montserrat', 'system-ui'],
-      'serif': ['ui-serif', 'Montserrat'],
-      'mono': ['ui-monospace', 'Montserrat'],
+      'sans': ['Montserrat'],
+      'serif': ['Montserrat'],
+      'mono': ['Montserrat'],
     }
   },
   plugins: [],
