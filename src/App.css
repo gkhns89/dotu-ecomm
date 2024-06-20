@@ -1,15 +1,19 @@
+/* APP CSS */
 #root {
 
   @apply max-w-[1280px] mx-auto my-0
 
 
 }
+/* APP CSS END */
 
-
-
+/* Header CSS */
 .logo {
 @apply h-16 p-2 will-change-transform transition-transform hover:scale-110
 }
+/* Header CSS END */
+
+
 
 @keyframes logo-spin {
   from {
