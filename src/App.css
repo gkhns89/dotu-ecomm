@@ -1,7 +1,7 @@
 /* APP CSS */
 #root {
 
-  @apply max-w-[1280px] mx-auto my-0
+  @apply max-w-[1280px] w-[100%] mx-auto my-0
 
 
 }
