@@ -1,31 +1,7 @@
-/* APP CSS */
+
 #root {
 
-  @apply max-w-[1280px] w-[100%] mx-auto my-0
+  @apply  w-[100%] mx-auto my-0;
 
 
-}
-/* APP CSS END */
-
-/* Header CSS */
-.logo {
-@apply h-16 p-2 will-change-transform transition-transform hover:scale-110
-}
-/* Header CSS END */
-
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }

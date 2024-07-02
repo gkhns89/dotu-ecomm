@@ -24,10 +24,7 @@
     @apply text-sm;
     @apply font-bold;
   }
-  a {
-    @apply text-sm;
-    @apply font-bold;
-  }
+
   li {
     @apply text-sm;
     @apply font-bold;
@@ -36,8 +33,12 @@
     @apply text-sm;
     @apply tracking-[0.2px];
   }
-}
 
+
+}
+.active {
+  @apply text-txt-g;
+}
 :root {
   @apply font-normal antialiased;
 }
