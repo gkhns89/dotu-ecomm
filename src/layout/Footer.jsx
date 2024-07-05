@@ -8,6 +8,11 @@ import {
 import { NavLink } from "react-router-dom";
 
 function Footer() {
+
+  const getYear = () => {
+    return new Date().getFullYear();
+  }
+
   return (
     <footer className="w-full flex flex-col justify-center items-center">
       <div aria-label="footer-container" className="flex flex-col flex-wrap sm:flex-row sm:px-48 max-w-60 sm:max-w-full py-20 gap-8 justify-center">
@@ -44,7 +49,7 @@ function Footer() {
           </nav>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center bg-[#FAFAFA]"><span className="max-w-56 sm:max-w-full py-6 text-center text-sm font-bold tracking-[0.2px]">Made with ❤️ by Dotu. All Right Reserved &copy; 2024</span></div>
+      <div aria-label="footer-bottom" className="flex w-full flex-col items-center bg-[#FAFAFA]"><span className="max-w-56 sm:max-w-full py-6 text-center text-sm font-bold tracking-[0.2px]">Made with ❤️ by Dotu. All Right Reserved &copy; {getYear()}</span></div>
     </footer>
   );
 }
