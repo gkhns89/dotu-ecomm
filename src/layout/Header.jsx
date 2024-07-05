@@ -22,7 +22,7 @@ function Header() {
         BrandName
       </h1></Link>
       <div
-        aria-label="header-content"
+        aria-label="header-search"
         className="sm:flex items-center hidden"
       >
         <input
@@ -56,7 +56,7 @@ function Header() {
         />
       </div>
     </div>
-    <div aria-label="searchbar" className="flex flex-col gap-4 mt-12 sm:hidden">
+    <div aria-label="nav-search" className="flex flex-col gap-4 mt-12 sm:hidden">
       <input
         type="text"
         placeholder="Search"

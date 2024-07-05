@@ -36,7 +36,7 @@ function Slider({ slides }) {
                 src={slide.image}
                 alt={slide.alt}
                 className="w-full min-h-[750px] aspect-video object-cover"
-              />
+              />x
             </div>
           );
         })}

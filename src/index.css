@@ -29,6 +29,15 @@
     @apply text-sm;
     @apply font-bold;
   }
+
+  footer a{
+    @apply text-sm;
+    @apply font-bold;
+    @apply text-txt-g;
+  }
+
+
+
   p {
     @apply text-sm;
     @apply tracking-[0.2px];
