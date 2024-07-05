@@ -27,7 +27,7 @@ function HomePage() {
   return (
   
   
-    <main aria-label="main" className="min-w-[414px] mb-6 mt-20">
+    <main aria-label="main-container" className="min-w-[414px] mb-6 mt-20">
     <Slider slides={slides}/>
     <section
       aria-label="editors-pick-section"
@@ -35,7 +35,7 @@ function HomePage() {
     >
       <div
         aria-label="editors-pick-title"
-        className="flex flex-col gap-3 items-center"
+        className="flex flex-col gap-3 mt-20 items-center"
       >
         <h3>EDITOR'S PICK</h3>
         <p className="text-center">
