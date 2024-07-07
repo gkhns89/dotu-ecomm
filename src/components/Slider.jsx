@@ -46,7 +46,7 @@ function Slider({ slides }) {
         aria-label="slider-content"
         className="absolute text-txt-w h-full max-w-[290px] flex flex-col items-center text-center justify-center gap-8"
       >
-        <h5 className="font-bold">SUMMER 2020</h5>
+        <h5 className="font-bold">SUMMER 2024</h5>
         <h1 className="text-5xl leading-snug">NEW COLLECTION</h1>
         <h4 className="leading-snug">
           We know how large objects will act, but things on a small scale.

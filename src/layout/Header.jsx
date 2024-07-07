@@ -5,6 +5,7 @@ import {
   faUser,
   faBars,
   faSearch,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
@@ -12,11 +13,11 @@ function Header() {
   return (
     <header
       aria-label="header"
-      className="min-w-[414px] max-w-[1280px] mx-8 my-6"
+      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)] min-w-[414px] px-8 py-6 justify-evenly items-center"
     >
       <div
         aria-label="header-top"
-        className="flex justify-between items-center"
+        className="flex min-w-full lg:gap-10 md:gap-6 sm:gap-2 justify-between items-center"
       >
         <Link to={"/"}>
           <h1
@@ -26,23 +27,32 @@ function Header() {
             BrandName
           </h1>
         </Link>
-        <div aria-label="header-search" className="sm:flex items-center hidden">
+        <div
+          aria-label="header-search"
+          className="sm:mx-2 md:mx-4 items-center hidden sm:flex"
+        >
           <input
             type="text"
             placeholder="Search"
-            className="border-2 border-gray-400 p-2"
+            className="md:max-w-36 lg:max-w-52 px-6 py-3 sm:hidden md:block sm:h-max"
           />
-          <select className="border-2 border-gray-400">
+          <select className="px-6 py-4 mr-2 max-w-36 sm:hidden md:block">
             <option>Black Friday</option>
             <option>Outlet</option>
           </select>
-          <button>
+          <button className="p-5 bg-c1 text-txt-w sm:rounded-md md:rounded-e-md lg:rounded-e-md">
             <FontAwesomeIcon icon={faSearch} />
           </button>
         </div>
+        <div aria-label="header-login-register" className="sm:flex md:flex-col md:gap-2 lg:flex-row lg:gap-11 gap-11 text-sm hidden">
+          <button className="text-txt-b">Login</button>
+          <button className=" text-txt-w bg-c1 rounded-s-md py-4 px-6 min-w-56">
+            Become a member <FontAwesomeIcon icon={faArrowRight} />
+          </button>
+        </div>
         <div
-          aria-label="header-buttons"
-          className="flex p-3 gap-8 justify-between"
+          aria-label="mobile-header-buttons"
+          className="flex p-3 gap-8 justify-between sm:hidden"
         >
           <FontAwesomeIcon
             icon={faUser}
@@ -59,8 +69,8 @@ function Header() {
         </div>
       </div>
       <div
-        aria-label="nav-search"
-        className="flex flex-col gap-4 mt-12 sm:hidden"
+        aria-label="mobile-search"
+        className="flex flex-col min-w-full gap-4 mt-12 sm:hidden"
       >
         <input
           type="text"
@@ -76,7 +86,7 @@ function Header() {
         </button>
       </div>
       <nav
-        aria-label="mobile-nav"
+        aria-label="header-nav"
         className="flex flex-col text-center gap-10 pt-14 sm:flex-row sm:text-sm sm:font-bold sm:pt-8 sm:gap-5"
       >
         <NavLink exact to="/">

@@ -1,7 +1,7 @@
 
 #root {
 
-  @apply  w-[100%] mx-auto my-0;
+  @apply  w-[100%] mx-auto my-0 font-normal antialiased;
 
 
 }

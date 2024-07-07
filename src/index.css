@@ -39,6 +39,8 @@
   header nav a {
     @apply text-5xl;
     @apply leading-10;
+    @apply sm:text-sm;
+    @apply sm:font-bold;
   }
 
   p {
@@ -48,9 +50,6 @@
 }
 .active {
   @apply text-txt-g;
-}
-:root {
-  @apply font-normal antialiased;
 }
 
 body {
