@@ -17,7 +17,7 @@ function Header() {
     >
       <div
         aria-label="header-top"
-        className="flex min-w-full lg:gap-10 md:gap-6 sm:gap-2 justify-between items-center"
+        className="flex min-w-full lg:gap-4 sm:gap-2 justify-between items-center"
       >
         <Link to={"/"}>
           <h1
