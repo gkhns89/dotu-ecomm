@@ -44,11 +44,11 @@ function Slider({ slides }) {
 
       <div
         aria-label="slider-content"
-        className="absolute text-txt-w h-full max-w-[290px] flex flex-col items-center text-center justify-center gap-8"
+        className="absolute rounded-3xl top-1/4 text-txt-w p-6 flex flex-col items-center text-center justify-center gap-8 backdrop-filter backdrop-blur-sm bg-[rgba(0,0,0,0.2)]"
       >
         <h5 className="font-bold">SUMMER 2024</h5>
         <h1 className="text-5xl leading-snug">NEW COLLECTION</h1>
-        <h4 className="leading-snug">
+        <h4 className="leading-snug max-w-[290px] ">
           We know how large objects will act, but things on a small scale.
         </h4>
         <button className="bg-c4 text-txt-b px-10 py-4 text-2xl font-bold rounded-md">

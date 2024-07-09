@@ -16,7 +16,7 @@ function Footer() {
     <footer className="w-full flex flex-col justify-center items-center">
       <div
         aria-label="footer-container"
-        className="flex flex-col flex-wrap sm:flex-row sm:px-48 max-w-60 sm:max-w-full py-20 gap-8 justify-center"
+        className="max-w-60 flex flex-col flex-wrap sm:flex-row sm:px-48 sm:max-w-full py-20 gap-8 justify-center"
       >
         <div
           aria-label="footer-info"
