@@ -13,7 +13,7 @@ function Header() {
   return (
     <header
       aria-label="header"
-      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)] min-w-[414px] px-8 py-6 justify-evenly items-center"
+      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)] min-w-[414px] px-8 py-6 justify-between"
     >
       <div
         aria-label="header-top"
@@ -40,13 +40,13 @@ function Header() {
             <option>Black Friday</option>
             <option>Outlet</option>
           </select>
-          <button className="p-5 bg-c1 text-txt-w sm:rounded-md md:rounded-e-md lg:rounded-e-md">
+          <button className="p-5 bg-c3 text-txt-w sm:rounded-md md:rounded-e-md lg:rounded-e-md">
             <FontAwesomeIcon icon={faSearch} />
           </button>
         </div>
         <div aria-label="header-login-register" className="sm:flex md:flex-col md:gap-2 lg:flex-row lg:gap-11 gap-11 text-sm hidden">
           <button className="text-txt-b">Login</button>
-          <button className=" text-txt-w bg-c1 rounded-s-md py-4 px-6 min-w-56">
+          <button className=" text-txt-w bg-c3 rounded-s-md py-4 px-6 min-w-56">
             Become a member <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
