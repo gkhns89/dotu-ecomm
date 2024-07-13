@@ -30,7 +30,7 @@ function Slider({ slides }) {
           return (
             <div
               key={slide.id}
-              className="w-full max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0"
+              className="w-full max-h-[calc(100vh-244px)] min-h-[750px] flex-shrink-0"
             >
               <img
                 src={slide.image}
