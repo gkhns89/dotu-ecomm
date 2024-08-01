@@ -16,6 +16,7 @@
   }
   h4 {
     @apply text-xl;
+    @apply text-txt-g;
   }
   h5 {
     @apply text-base;

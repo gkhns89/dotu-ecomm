@@ -8,7 +8,7 @@ function EditorsPick() {
   return (
     <section
       aria-label="editors-pick-section"
-      className="flex flex-col  gap-4 mx-8"
+      className="flex flex-col gap-4 mx-8"
     >
       <div
         aria-label="editors-pick-title"

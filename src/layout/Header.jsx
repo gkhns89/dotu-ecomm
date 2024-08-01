@@ -13,7 +13,7 @@ function Header() {
   return (
     <header
       aria-label="header"
-      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)] min-w-[414px] px-8 py-6 justify-between"
+      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)]  px-8 justify-between"
     >
       <div
         aria-label="header-top"
@@ -22,7 +22,7 @@ function Header() {
         <Link to={"/"}>
           <h1
             aria-label="logo"
-            className="min-w-[153px] font-bold leading-8 tracking-[0.1px] text-2xl text-txt-b"
+            className="min-w-[150px] font-bold leading-8 tracking-[0.1px] text-2xl text-txt-b"
           >
             BrandName
           </h1>
@@ -89,7 +89,7 @@ function Header() {
       </div>
       <nav
         aria-label="header-nav"
-        className="flex flex-col text-center gap-10 pt-14 sm:flex-row sm:text-sm sm:font-bold sm:pt-8 sm:gap-5"
+        className="flex flex-col text-center gap-10 py-14 sm:flex-row sm:text-sm sm:font-bold sm:pt-8 sm:gap-5"
       >
         <NavLink exact to="/">
           Home

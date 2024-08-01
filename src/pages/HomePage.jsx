@@ -5,6 +5,7 @@ import slide3 from "../assets/images/sliderImages/slide3.jpeg";
 
 import Slider from "../components/Slider";
 import EditorsPick from "../components/EditorsPick";
+import BestsellerProducts from "../components/BestsellerProducts";
 function HomePage() {
   let slides = [
     {
@@ -25,9 +26,10 @@ function HomePage() {
   ];
 
   return (
-    <main aria-label="main-container" className="min-w-[414px] mb-6 mt-20">
+    <main aria-label="main-container">
       <Slider slides={slides} />
       <EditorsPick />
+      <BestsellerProducts />
     </main>
   );
 }

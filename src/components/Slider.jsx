@@ -30,7 +30,7 @@ function Slider({ slides }) {
           return (
             <div
               key={slide.id}
-              className="w-full max-h-[calc(100vh-244px)] min-h-[750px] flex-shrink-0"
+              className="w-full max-h-[calc(100vh-173px)] min-h-[600px] flex-shrink-0"
             >
               <img
                 src={slide.image}
@@ -48,7 +48,7 @@ function Slider({ slides }) {
       >
         <h5 className="font-bold">SUMMER 2024</h5>
         <h1 className="text-5xl leading-snug">NEW COLLECTION</h1>
-        <h4 className="leading-snug max-w-[290px] ">
+        <h4 className="leading-snug max-w-[290px] text-txt-w">
           We know how large objects will act, but things on a small scale.
         </h4>
         <button className="bg-c4 text-txt-b px-10 py-4 text-2xl font-bold rounded-md">
