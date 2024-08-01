@@ -12,6 +12,7 @@ export default {
       txt: {
         b: "#121521",
         g: "#737373",
+        g2: "#BDBDBD",
         w: "#f9ffff",
       },
     },
