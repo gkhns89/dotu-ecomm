@@ -6,6 +6,7 @@ import slide3 from "../assets/images/sliderImages/slide3.jpeg";
 import Slider from "../components/Slider";
 import EditorsPick from "../components/EditorsPick";
 import BestsellerProducts from "../components/BestsellerProducts";
+
 function HomePage() {
   let slides = [
     {
@@ -30,6 +31,7 @@ function HomePage() {
       <Slider slides={slides} />
       <EditorsPick />
       <BestsellerProducts />
+   
     </main>
   );
 }
