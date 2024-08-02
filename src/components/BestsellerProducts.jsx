@@ -4,11 +4,11 @@ function BestsellerProducts() {
   return (
     <section
       aria-label="bestseller-section"
-      className="flex flex-col gap-4 mx-8"
+      className="flex flex-col items-center gap-4 mx-8 mt-20 sm:mx-0 mb-20 md:mx-0"
     >
       <div
         aria-label="editors-pick-title"
-        className="flex flex-col gap-3 mt-20 items-center text-center"
+        className="flex flex-col gap-3 items-center text-center"
       >
         <h4>Featured Products</h4>
         <h3 className="text-wrap">BESTSELLER PRODUCTS</h3>
@@ -16,7 +16,7 @@ function BestsellerProducts() {
           Problems trying to resolve the conflict between{" "}
         </p>
       </div>
-      <div className="flex flex-wrap mt-20 justify-center gap-6 max-w-7xl">
+      <div className="flex flex-wrap mt-20 justify-center gap-6 md:max-w-7xl">
         {BestsellerData().map((item, index) => (
           <div key={index} className="max-w-60">
             <div>
