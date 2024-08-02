@@ -8,6 +8,7 @@ import EditorsPick from "../components/EditorsPick";
 import BestsellerProducts from "../components/BestsellerProducts";
 import Fluid from "../components/Fluid";
 import ProductSlider from "../components/ProductSlider";
+import FeaturedBlog from "../components/FeaturedBlog";
 
 function HomePage() {
   let slides = [
@@ -35,6 +36,7 @@ function HomePage() {
       <BestsellerProducts />
       <ProductSlider />
       <Fluid />
+      <FeaturedBlog />
     </main>
   );
 }
