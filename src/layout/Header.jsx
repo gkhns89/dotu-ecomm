@@ -13,7 +13,7 @@ function Header() {
   return (
     <header
       aria-label="header"
-      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)]  px-8 justify-between"
+      className="flex flex-col sm:bg-[rgba(243,243,243,0.74)]  px-8 pt-5 justify-between"
     >
       <div
         aria-label="header-top"
