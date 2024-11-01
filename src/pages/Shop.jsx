@@ -1,47 +1,60 @@
-import React from 'react'
+import Products from "../components/Products";
+import Pagination from "../components/Pagination";
+import ProductsData from "../components/mocks/ProductsData";
+import { useState, useEffect, useRef } from "react";
+//import axios from "axios";
+
+export default function Shop() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage] = useState(8);
+
+  const productsRef = useRef(null);
+
+  const scrollToProducts = () => {
+    productsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    setProducts(ProductsData);
+    setLoading(false);
+  }, []);
+
+  // Get products via Axios
+  /*   useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+      setProducts(res.data);
+      setLoading(false);
+    };
+
+    fetchPosts();
+  }, []); */
+
+  // Get current Products
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  // Change page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 
-const ProductsData = ({ products, loading }) => {
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
-
-}
-
-function Shop() {
   return (
-    <section className="bg-[#FAFAFA] py-6" aria-label="product-list-section">
-
-<div
-        aria-label="product-list-inner-card"
-        className="flex flex-wrap justify-center gap-4 px-32"
-      >
-        {ProductsData().map((item, index) => (
-          <div
-            aria-label="product-list-card"
-            key={index}
-            className="relative gap-3"
-          >
-            <img
-              className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover "
-              src={item.picture}
-              alt="Photo"
-            />
-            <div
-              aria-label="product-list-title"
-              className="absolute flex flex-col gap-3 bottom-20 left-20 md:left-12 md:bottom-16 text-center font-bold px-12 py-3 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.2)] text-textPapayas-white rounded-xl"
-            >
-              <h5 className="font-bold">{item.description}</h5>
-              <h6 className=" text-textPapayas-white font-normal">
-                {item.emptyInfo}
-              </h6>
-            </div>
-          </div>
-        ))}
-      </div>
-
-</section>
-  )
+    <>
+      <Products products={currentProducts} loading={loading} productsRef={productsRef} />
+      <Pagination
+        productsPerPage={productsPerPage}
+        totalProducts={products.length}
+        paginate={paginate}
+        scrollToProducts={scrollToProducts}
+      />
+    </>
+  );
 }
-
-export default Shop

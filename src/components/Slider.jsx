@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -74,4 +75,9 @@ function Slider({ slides }) {
     </div>
   );
 }
+
+Slider.propTypes = {
+  slides: PropTypes.array,
+};
+
 export default Slider;
