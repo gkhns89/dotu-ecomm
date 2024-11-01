@@ -2,6 +2,8 @@ import Products from "../components/Products";
 import Pagination from "../components/Pagination";
 import ProductsData from "../components/mocks/ProductsData";
 import { useState, useEffect, useRef } from "react";
+import ProductFilter from "../components/ProductFilter";
+import HeaderCategory from "../components/HeaderCategory";
 //import axios from "axios";
 
 export default function Shop() {
@@ -48,6 +50,8 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
+    <HeaderCategory />
+    <ProductFilter />
       <Products products={currentProducts} loading={loading} productsRef={productsRef} />
       <Pagination
         productsPerPage={productsPerPage}

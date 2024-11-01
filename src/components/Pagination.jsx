@@ -14,14 +14,6 @@ const Pagination = ({ productsPerPage, totalProducts, paginate, scrollToProducts
           <div key={number}>
             <button
               onClick={() => paginate(number) && scrollToProducts() }
-              
-              // onClick={() => {
-              //   if (number === 1) {
-              //     scrollToProducts();
-              //   }  else {
-              //     paginate(number);    
-              //   }
-              // }}
               href={() => paginate(number)}
               className="w-10 h-10 flex justify-center items-center border border-c1 rounded-md"
             >
