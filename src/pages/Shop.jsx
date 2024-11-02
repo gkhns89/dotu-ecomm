@@ -1,9 +1,12 @@
+import ProductsData from "../components/mocks/ProductsData";
+
+import HeaderCategory from "../components/HeaderCategory";
+import ProductFilter from "../components/ProductFilter";
 import Products from "../components/Products";
 import Pagination from "../components/Pagination";
-import ProductsData from "../components/mocks/ProductsData";
+import Clients from "../components/Clients";
+
 import { useState, useEffect, useRef } from "react";
-import ProductFilter from "../components/ProductFilter";
-import HeaderCategory from "../components/HeaderCategory";
 //import axios from "axios";
 
 export default function Shop() {
@@ -45,20 +48,24 @@ export default function Shop() {
   );
 
   // Change page
-const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <>
-    <HeaderCategory />
-    <ProductFilter />
-      <Products products={currentProducts} loading={loading} productsRef={productsRef} />
+    <main>
+      <HeaderCategory />
+      <ProductFilter />
+      <Products
+        products={currentProducts}
+        loading={loading}
+        productsRef={productsRef}
+      />
       <Pagination
         productsPerPage={productsPerPage}
         totalProducts={products.length}
         paginate={paginate}
         scrollToProducts={scrollToProducts}
       />
-    </>
+      <Clients />
+    </main>
   );
 }

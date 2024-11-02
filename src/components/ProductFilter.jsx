@@ -6,15 +6,15 @@ function ProductFilter() {
   return (
     <section className="flex flex-col flex-wrap md:flex-row justify-around items-center gap-6 py-6 px-36">
       <div>
-        <h6 className="text-mainSpace-grey">Showing all 12 results</h6>
+        <h6 className="text-txt-g">Showing all 12 results</h6>
       </div>
 
       <div className="flex gap-4 flex-row items-center">
-        <h6 className="text-mainSpace-grey">Views:</h6>
-        <button className="p-4 border-mainSpace-grey border-[1px] rounded-md text-mainSpace-blue">
+        <h6 className="text-txt-g">Views:</h6>
+        <button className="px-6 py-4 border-c3 border-opacity-40  border-[1px] rounded-md text-txt-g">
           <FontAwesomeIcon icon={faBorderAll} />
         </button>
-        <button className="p-4 border-mainSpace-grey border-[1px] rounded-md text-mainSpace-blue">
+        <button className="px-6 py-4 border-c3 border-opacity-40 border-[1px] rounded-md text-txt-g">
           <FontAwesomeIcon icon={faListUl} />{" "}
         </button>
       </div>
@@ -23,7 +23,7 @@ function ProductFilter() {
         <select
           name="Sorting"
           id="sort"
-          className="border-mainSpace-grey border-[1px] py-1 px-3 rounded-md text-mainSpace-blue bg-mainSpace-blue bg-opacity-5 tracking-wider"
+          className="form-select"
         >
           <option value="popu">Popularity</option>
           <option value="top">Top sales</option>
@@ -31,10 +31,12 @@ function ProductFilter() {
           <option value="prc-low-high">Price low to high</option>
           <option value="prc-high-low">Price high to low</option>
         </select>
-        <button className="button-std tracking-wider">Filter</button>
+        <button className=" text-txt-w bg-c3 rounded-md py-4 px-6 min-h-full tracking-wider">
+          Filter
+        </button>
       </div>
-    </section> 
-  )
+    </section>
+  );
 }
 
-export default ProductFilter
+export default ProductFilter;
