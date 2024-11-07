@@ -6,6 +6,7 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 // Page Imports
 import Home from "./pages/HomePage";
+import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/shop">
+          <Shop />
+          </Route>
         <Route path="/contact">
           <Contact />
         </Route>

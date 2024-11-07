@@ -37,12 +37,12 @@ function Header() {
             placeholder="Search"
             className="w-full px-6 py-3 sm:hidden md:block min-h-full"
           />
-          <select className="px-6 py-4 w-full sm:hidden md:block min-h-full">
+          <select className="form-select w-full mr-1 sm:hidden md:block min-h-full">
             <option>Black Friday</option>
             <option>Outlet</option>
           </select>
 </div>
-          <button className="p-4 bg-c3 text-txt-w md:min-h-28 lg:min-h-full sm:rounded-md md:rounded-e-md lg:rounded-e-md">
+          <button className="p-4 bg-c3 border-c3 border-[1px] text-txt-w md:min-h-28 lg:min-h-full sm:rounded-md md:rounded-e-md lg:rounded-e-md">
             <FontAwesomeIcon icon={faSearch} />
           </button>
         </div>
