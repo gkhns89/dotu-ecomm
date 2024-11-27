@@ -95,6 +95,7 @@ function Header() {
           Home
         </NavLink>
         <NavLink to="/shop">Shop</NavLink>
+        <NavLink to="/product">Product</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
