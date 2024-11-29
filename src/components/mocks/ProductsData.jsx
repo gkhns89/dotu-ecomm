@@ -21,6 +21,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 5,
     },
     {
       id: 1,
@@ -30,6 +31,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 0,
     },
     {
       id: 2,
@@ -39,6 +41,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 35,
     },
     {
       id: 3,
@@ -48,6 +51,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 15,
     },
     {
       id: 4,
@@ -57,6 +61,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 2,
     },
     {
       id: 5,
@@ -66,6 +71,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 21,
     },
     {
       id: 6,
@@ -75,6 +81,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 4,
     },
     {
       id: 7,
@@ -84,6 +91,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 25,
     },
     {
       id: 8,
@@ -93,6 +101,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 32,
     },
     {
       id: 9,
@@ -102,6 +111,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 13,
     },
     {
       id: 10,
@@ -111,6 +121,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 12,
     },
     {
       id: 11,
@@ -120,6 +131,7 @@ const ProductsData = () => {
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
+      stock: 9,
     },
   ];
 };

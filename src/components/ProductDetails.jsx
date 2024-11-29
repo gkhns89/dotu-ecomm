@@ -1,5 +1,10 @@
 import { useParams, useLocation, useHistory } from "react-router-dom";
 import ProductsData from "../components/mocks/ProductsData";
+import Breadcrumb from "./Breadcrumb";
+import ProductDetail from "./ProductDetail";
+import ProductDetailExt from "./ProductDetailExt";
+import BestsellerProducts from "./BestsellerProducts";
+import Clients from "./Clients";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -19,11 +24,14 @@ function ProductDetails() {
   }
 
   return (
-    <div>
-      <h1>{item.title}</h1>
-      <img src={item.picture} alt={item.title} />
-      <p>{item.description}</p>
-    </div>
+    <section>
+      <Breadcrumb />
+      <ProductDetail item={item} />
+      <ProductDetailExt item={item} />
+      <BestsellerProducts />
+      <Clients />
+   
+    </section>
   );
 }
 

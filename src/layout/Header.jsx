@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
@@ -95,7 +94,6 @@ function Header() {
           Home
         </NavLink>
         <NavLink to="/shop">Shop</NavLink>
-        <NavLink to="/product">Product</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

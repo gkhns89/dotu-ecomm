@@ -9,7 +9,7 @@ const Products = ({ products, loading }) => {
   }
 
   const handleProductClick = (item) => {
-    // Detay sayfasına yönlendirme yap ve ürünü state ile taşı
+   
     history.push(`/product/${item.id}`, { item });
   };
   return (
