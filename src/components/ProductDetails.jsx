@@ -30,7 +30,6 @@ function ProductDetails() {
       <ProductDetailExt item={item} />
       <BestsellerProducts />
       <Clients />
-   
     </section>
   );
 }

@@ -15,7 +15,8 @@ const ProductsData = () => {
   return [
     {
       id: 0,
-      picture: Product1,
+      picture0: Product1,
+      picture2: Product1,
       title: "Graphic Design",
       description: "English Department-1",
       emptyInfo: ["react", "redux", "axios"],
@@ -25,7 +26,7 @@ const ProductsData = () => {
     },
     {
       id: 1,
-      picture: Product2,
+      picture0: Product2,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -35,7 +36,7 @@ const ProductsData = () => {
     },
     {
       id: 2,
-      picture: Product3,
+      picture0: Product3,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -45,7 +46,7 @@ const ProductsData = () => {
     },
     {
       id: 3,
-      picture: Product4,
+      picture0: Product4,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -55,7 +56,7 @@ const ProductsData = () => {
     },
     {
       id: 4,
-      picture: Product5,
+      picture0: Product5,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -65,7 +66,7 @@ const ProductsData = () => {
     },
     {
       id: 5,
-      picture: Product6,
+      picture0: Product6,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -75,7 +76,7 @@ const ProductsData = () => {
     },
     {
       id: 6,
-      picture: Product7,
+      picture0: Product7,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -85,7 +86,7 @@ const ProductsData = () => {
     },
     {
       id: 7,
-      picture: Product8,
+      picture0: Product8,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -95,7 +96,7 @@ const ProductsData = () => {
     },
     {
       id: 8,
-      picture: Product9,
+      picture0: Product9,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -105,7 +106,7 @@ const ProductsData = () => {
     },
     {
       id: 9,
-      picture: Product10,
+      picture0: Product10,
       title: "Graphic Design",
       description: "English Department-10",
       emptyInfo: ["react", "redux", "axios"],
@@ -115,7 +116,7 @@ const ProductsData = () => {
     },
     {
       id: 10,
-      picture: Product11,
+      picture0: Product11,
       title: "Graphic Design",
       description: "English Department-11",
       emptyInfo: ["react", "redux", "axios"],
@@ -125,7 +126,7 @@ const ProductsData = () => {
     },
     {
       id: 11,
-      picture: Product12,
+      picture0: Product12,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],

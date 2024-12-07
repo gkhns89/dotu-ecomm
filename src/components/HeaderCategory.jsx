@@ -22,16 +22,16 @@ function HeaderCategory() {
           <div
             aria-label="product-category-card"
             key={index}
-            className="relative gap-3"
+            className="relative gap-3 w-[325px]"
           >
             <img
-              className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover "
+              className="min-w-[325px] md:min-w-[240px] h-[250px] md:h-[244px] object-cover "
               src={item.picture}
               alt="Photo"
             />
             <div
               aria-label="product-category-title"
-              className="absolute flex flex-col gap-3 bottom-20 left-20 md:left-12 md:bottom-16 text-center font-bold px-12 py-3 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.7)] text-textPapayas-white rounded-xl"
+              className="absolute flex flex-col gap-3 bottom-[35%] left-[calc(50%-125px)] md:left-12 md:bottom-16 text-center font-bold px-12 py-3 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.7)] text-txt-w rounded-xl"
             >
               <h5 className="text-c4 font-bold">{item.description}</h5>
               <h6 className=" text-c2 font-normal">{item.emptyInfo}</h6>
