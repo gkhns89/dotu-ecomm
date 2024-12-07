@@ -16,6 +16,7 @@ const ProductsData = () => {
     {
       id: 0,
       picture0: Product1,
+      picture1: Product1,
       picture2: Product1,
       title: "Graphic Design",
       description: "English Department-1",
@@ -27,6 +28,8 @@ const ProductsData = () => {
     {
       id: 1,
       picture0: Product2,
+      picture1: Product2,
+      picture2: Product2,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -37,6 +40,8 @@ const ProductsData = () => {
     {
       id: 2,
       picture0: Product3,
+      picture1: Product3,
+      picture2: Product3,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -47,6 +52,8 @@ const ProductsData = () => {
     {
       id: 3,
       picture0: Product4,
+      picture1: Product4,
+      picture2: Product4,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -57,6 +64,8 @@ const ProductsData = () => {
     {
       id: 4,
       picture0: Product5,
+      picture1: Product5,
+      picture2: Product5,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -67,6 +76,8 @@ const ProductsData = () => {
     {
       id: 5,
       picture0: Product6,
+      picture1: Product6,
+      picture2: Product6,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -77,6 +88,8 @@ const ProductsData = () => {
     {
       id: 6,
       picture0: Product7,
+      picture1: Product7,
+      picture2: Product7,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -87,6 +100,8 @@ const ProductsData = () => {
     {
       id: 7,
       picture0: Product8,
+      picture1: Product8,
+      picture2: Product8,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -97,6 +112,8 @@ const ProductsData = () => {
     {
       id: 8,
       picture0: Product9,
+      picture1: Product9,
+      picture2: Product9,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -107,6 +124,8 @@ const ProductsData = () => {
     {
       id: 9,
       picture0: Product10,
+      picture1: Product10,
+      picture2: Product10,
       title: "Graphic Design",
       description: "English Department-10",
       emptyInfo: ["react", "redux", "axios"],
@@ -117,6 +136,8 @@ const ProductsData = () => {
     {
       id: 10,
       picture0: Product11,
+      picture1: Product11,
+      picture2: Product11,
       title: "Graphic Design",
       description: "English Department-11",
       emptyInfo: ["react", "redux", "axios"],
@@ -127,6 +148,8 @@ const ProductsData = () => {
     {
       id: 11,
       picture0: Product12,
+      picture1: Product12,
+      picture2: Product12,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -137,4 +160,4 @@ const ProductsData = () => {
   ];
 };
 
-export default ProductsData
+export default ProductsData;
