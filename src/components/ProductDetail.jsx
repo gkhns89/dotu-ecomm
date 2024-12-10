@@ -1,13 +1,30 @@
 import PropTypes from "prop-types";
 import { StockCheck } from "./funcs/stockCheck";
+import { useState } from "react";
 function ProductDetail(props) {
   const { item } = props;
+  const [selectedImage, setSelectedImage] = useState(item.picture0);
 
   return (
     <div className="flex flex-col justify-center sm:items-start items-center sm:flex-row gap-4">
       <div className="flex flex-col items-start max-w-[342px]">
-        <div className="pb-5"><img src={item.picture} alt={item.title} /></div>
-        <div className="flex flex-row gap-5 max-w-24 max-h-16"><img src={item.picture} alt={item.title} /><img src={item.picture} alt={item.title} /></div>
+        <div className="pb-5">
+          <img src={selectedImage} alt={item.title} />
+        </div>
+
+        <div className="flex flex-row gap-5 max-w-24 max-h-16">
+          {Object.keys(item)
+            .filter((key) => key.startsWith("picture"))
+            .map((key) => (
+              <img
+                onClick={() => setSelectedImage(item[key])}
+                key={key}
+                src={item[key]}
+                alt={`${item.title} ${key}`}
+                style={{ cursor: "hand" }}
+              />
+            ))}
+        </div>
       </div>
       <div className="flex flex-col">
         <h3>{item.title}</h3>
@@ -74,7 +91,12 @@ function ProductDetail(props) {
               />
             </svg>
           </span>
-          <span aria-label="reviews" className="text-sm text-txt-g font-bold tracking-[0.2px] leading-6">12 Reviews</span>
+          <span
+            aria-label="reviews"
+            className="text-sm text-txt-g font-bold tracking-[0.2px] leading-6"
+          >
+            12 Reviews
+          </span>
         </div>
         <span aria-label="price" className="text-3xl">
           {item.price1}
@@ -91,7 +113,14 @@ function ProductDetail(props) {
           <button className="bg-[#00A1C1] rounded-full w-8 h-8"></button>
           <button className="bg-[#B73225] rounded-full w-8 h-8"></button>
         </div>
-        <div className="flex flex-row gap-2 pt-12"><button className="bg-c3 rounded-md w-36 h-11 text-sm font-bold px-5 py-2 text-nowrap text-txt-w">Select Options</button><button></button><button></button><button></button></div>
+        <div className="flex flex-row gap-2 pt-12">
+          <button className="bg-c3 rounded-md w-36 h-11 text-sm font-bold px-5 py-2 text-nowrap text-txt-w">
+            Select Options
+          </button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
       </div>
     </div>
   );

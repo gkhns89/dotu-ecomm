@@ -22,7 +22,7 @@ const Products = ({ products, loading }) => {
           <div key={item.id} className="flex flex-col items-center ">
             <img
               onClick={() => handleProductClick(item)}
-              src={item.picture}
+              src={item.picture0}
               className="  h-[427px] md:w-60 md:h-[300px] "
               alt="shopCardPicture"
               style={{ cursor: "pointer" }}
