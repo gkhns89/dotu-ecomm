@@ -7,21 +7,21 @@ function ProductDetail(props) {
 
   return (
     <div className="flex flex-col justify-center sm:items-start items-center sm:flex-row gap-4">
-      <div className="flex flex-col items-start max-w-[342px]">
-        <div className="pb-5">
-          <img src={selectedImage} alt={item.title} />
+      <div className="flex sm:flex-row-reverse flex-col items-start max-w-[542px]">
+        <div className="">
+          <img className="w-full" src={selectedImage} alt={item.title} />
         </div>
 
-        <div className="flex flex-row gap-5 max-w-24 max-h-16">
+        <div className="flex flex-row justify-start gap-2 flex-wrap max-w-full sm:max-w-[136px] sm:mr-2 mt-2">
           {Object.keys(item)
             .filter((key) => key.startsWith("picture"))
             .map((key) => (
-              <img
+              <img className="max-w-16"
                 onClick={() => setSelectedImage(item[key])}
                 key={key}
                 src={item[key]}
                 alt={`${item.title} ${key}`}
-                style={{ cursor: "hand" }}
+                style={{ cursor: "pointer" }}
               />
             ))}
         </div>
