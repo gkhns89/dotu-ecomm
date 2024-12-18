@@ -1,32 +1,15 @@
 import PropTypes from "prop-types";
 import { StockCheck } from "./funcs/stockCheck";
-import { useState } from "react";
+import SliderProductDetail from "./SliderProductDetail";
 function ProductDetail(props) {
   const { item } = props;
-  const [selectedImage, setSelectedImage] = useState(item.picture0);
 
   return (
-    <div className="flex flex-col justify-center sm:items-start items-center sm:flex-row gap-4">
-      <div className="flex sm:flex-row-reverse flex-col items-start max-w-[542px]">
-        <div className="">
-          <img className="w-full" src={selectedImage} alt={item.title} />
-        </div>
-
-        <div className="flex flex-row justify-start gap-2 flex-wrap max-w-full sm:max-w-[136px] sm:mr-2 mt-2">
-          {Object.keys(item)
-            .filter((key) => key.startsWith("picture"))
-            .map((key) => (
-              <img className="max-w-16"
-                onClick={() => setSelectedImage(item[key])}
-                key={key}
-                src={item[key]}
-                alt={`${item.title} ${key}`}
-                style={{ cursor: "pointer" }}
-              />
-            ))}
-        </div>
-      </div>
-      <div className="flex flex-col">
+    <div className="flex flex-col justify-center sm:items-start items-center sm:flex-row gap-4 min-w-full px-8">
+      
+        <SliderProductDetail slides={item} />
+      
+      <div className="flex flex-col min-w-56 w-64">
         <h3>{item.title}</h3>
         <div aria-label="rating" className="flex flex-row gap-2 items-center">
           <span aria-label="rating-stars" className="flex flex-row gap-2">
@@ -106,7 +89,7 @@ function ProductDetail(props) {
           {StockCheck(item.stock)}
         </div>
         <p className="pb-4 ">{item.description}</p>
-        <hr className="w-72 text-[#BDBDBD] " />
+        <hr className="min-w-56 max-w-64 text-[#BDBDBD] " />
         <div className="flex flex-row gap-2 pt-5 ">
           <button className="bg-[#FCA311] rounded-full w-8 h-8"></button>
           <button className="bg-[#47AD97] rounded-full w-8 h-8"></button>
